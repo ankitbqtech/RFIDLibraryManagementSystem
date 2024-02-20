@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+
+<TabPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rfidlibrarymanagementsystem.MainController">
+    <Tab text="Tab 1" closable="false">
+        <content>
+            <VBox alignment="CENTER" spacing="10">
+                <Button text="Connect" onAction="#ReaderConnection"/>
+                <TextArea fx:id="outputTextArea" prefHeight="200" editable="false"/>
+            </VBox>
+        </content>
+    </Tab>
+
+    <!-- Add more tabs as needed -->
+    <Tab text="Tab 2" closable="false">
+        <content>
+            <!-- Content for Tab 2 -->
+        </content>
+    </Tab>
+</TabPane>
